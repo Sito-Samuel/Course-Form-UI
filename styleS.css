@@ -1,0 +1,182 @@
+/* styles.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1e1c1c;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: fit-content;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.modal {
+  flex: 1;
+  padding: 20px;
+}
+
+.modal-content {
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  background-color: #fff;
+}
+
+.modal h2 {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+  margin-top: 20px;
+  width: 90%;
+  padding-left: 20px;
+  height: 560px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="button"],
+input[type="submit"] {
+  background-color: #1e1c1c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+}
+
+button[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.drug-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.drug-input input[type="text"],
+.drug-input input[type="number"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.drug-input button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  width: 80px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.drug-input button:hover {
+  background-color: #d32f2f;
+}
+
+.drug-input:last-child {
+  margin-bottom: 0;
+}
+
+.doctors-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.doctors-table th,
+.doctors-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.doctors-table th {
+  font-weight: bold;
+}
+
+.book-icon {
+  color: #007bff; /* Customize the color of the book icon */
+}
+
+.book-icon:hover {
+  color: #0056b3; /* Customize the hover color of the book icon */
+  text-decoration: none;
+}
+.input-group input[type="number"] {
+  width: 80px; /* Adjust the width of the dosage input field as needed */
+}
+
+#reservationModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  backdrop-filter: blur(10px);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.printedSlip {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+}

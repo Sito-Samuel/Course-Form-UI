@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Course Selection</title>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
+
+      <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    
+    <div class="card">
+      <div class="frosty-effect">
+        <h2 class="title">Course Selection</h2>
+
+        <form id="courseForm">
+          <div class="course-row">
+            <input
+              type="checkbox"
+              name="course"
+              value="CSC 331"
+              class="course-checkbox" />
+            <label class="course-label"
+              ><span style="font-size: 12px">CSC</span> 331 - Compiler
+              Construction (3 credits)</label
+            >
+          </div>
+          <div class="course-row">
+            <input
+              type="checkbox"
+              name="course"
+              value="CSC 371"
+              class="course-checkbox" />
+            <label class="course-label"
+              ><span style="font-size: 12px">CSC</span> 371 - Numerical Methods
+              and Computational Science (3 credits)</label
+            >
+          </div>
+          <div class="course-row">
+            <input
+              type="checkbox"
+              name="course"
+              value="CSC 321"
+              class="course-checkbox" />
+            <label class="course-label"
+              ><span style="font-size: 12px">CSC</span> 321 - Database Design
+              And Management (3 credits)</label
+            >
+          </div>
+          <div class="course-row">
+            <input
+              type="checkbox"
+              name="course"
+              value="CSC 351"
+              class="course-checkbox" />
+            <label class="course-label"
+              ><span style="font-size: 12px">CSC</span> 351 - System Analysis
+              And Design (3 credits)</label
+            >
+          </div>
+          <div class="course-row">
+            <input
+              type="checkbox"
+              name="course"
+              value="CSC 311"
+              class="course-checkbox" />
+            <label class="course-label"
+              ><span style="font-size: 12px">CSC</span> 311 - Datastructure and
+              Algorithm (3 credits)</label
+            >
+          </div>
+          <div class="course-row">
+            <input
+              type="checkbox"
+              name="course"
+              value="CSC 341"
+              class="course-checkbox" />
+            <label class="course-label"
+              ><span style="font-size: 12px">CSC</span> 341 - Structured
+              Programming (3 credits)</label
+            >
+          </div>
+          <div class="course-row">
+            <input
+              type="checkbox"
+              name="course"
+              value="CSC 381"
+              class="course-checkbox" />
+            <label class="course-label"
+              ><span style="font-size: 12px">CSC</span> 381 - Human Computer
+              Interaction (2 credits)</label
+            >
+          </div>
+          <div class="course-row">
+            <input
+              type="checkbox"
+              name="course"
+              value="GSS 300"
+              class="course-checkbox" />
+            <label class="course-label"
+              ><span style="font-size: 12px">GSS</span> 300 - Introduction To
+              Entrepreneurial Skills (2 credits)</label
+            >
+          </div>
+
+             <div class="button-container">
+        <button type="button"  id="button" onclick="calculateTotalCredits()">Print</button>
+      </div>
+        </form>
+
+     
+    </div>
+  
+    </div>
+
+      <!-- Popup Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Total Credits</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Course Code</th>
+              <th>Course Title</th>
+              <th>Credits</th>
+              <th> Course Lecturer</th>
+            </tr>
+          </thead>
+          <tbody id="modalTableBody"></tbody>
+        </table>
+         <div id="totalCredits" class="total-credits"></div>
+      </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./json.js"></script>
+  </body>
+</html>

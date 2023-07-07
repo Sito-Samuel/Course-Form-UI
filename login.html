@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./styleS.css" />
+  </head>
+  <body>
+    <div class="container">
+    
+      <div class="modal" id="modalForm">
+        <div class="modal-content">
+          <h2>LOGIN PAGE</h2>
+          <form>
+            
+         
+            <label for="treatmentPlan">LOGIN</label>
+            <input
+              type="text"
+              id="treatmentPlan"
+              name="treatmentPlan"
+              placeholder="Enter username"
+              required /><br /><br />
+        
+            <input
+              type="text"
+              id="treatmentPlan"
+              name="treatmentPlan"
+              placeholder="Enter password"
+              required /><br /><br />
+        
+            <button type="button" onclick="Input()">Login</button
+            ><br /><br />
+     
+  
+          </form>
+        </div>
+      </div>
+      
+    <!-- New Reservation Modal -->
+ 
+  </div>
+    </div>
+       <div class="modal" id="reservationModal">
+      <div class="modal-content">
+        <h2>Slip</h2>
+        <table id="reservationTable"></table>
+        <input type="button" value="Close" onclick="closeReservationModal()" />
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
